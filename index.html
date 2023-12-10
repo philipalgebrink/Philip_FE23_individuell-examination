@@ -5,33 +5,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Website</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-  <div class="header-first">
+  <div class="header-center">
     <div class="header-logo">
-      <img src="assets/zocom-logo 1.svg" alt="Logo" height="24px">
+      <img src="assets/zocom-logo 1.svg" alt="Logo" class="logo-img">
     </div>
-      <nav>
-        <a href="#">HOME</a>
-        <a href="#">HOW IT WORKS</a>
-        <a href="#">FEATURES</a>
-        <a href="#">PRESS</a>
-        <a href="#">PRICING</a>
-        <a href="#">CONTACT</a>
-      </nav>
-      <button class="header-button">GET A QUOTE</button>
-  </div>
-  <div class="header-ad">
-    <h1>Download our App</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel
-      eleifend diam, tempus accumsan neque. Praesent quis dolor.</p>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">HOW IT WORKS</a></li>
+        <li><a href="#">FEATURES</a></li>
+        <li><a href="#">PRESS</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="get-quote-button">
+      <a href="#" class="quote-button">GET A QUOTE</a>
+    </div>
   </div>
 </header>
 
-<!-- Your content goes here -->
+<section class="download-app">
+  <h1>Download our App</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel<br>eleifend diam, tempus accumsan neque. Praesent quis dolor.</p>
+  <div class="app-buttons">
+    <a href="#" class="app-store-btn"><img src="assets/App store btn.svg" alt="App Store"></a>
+    <a href="#" class="google-play-btn"><img src="assets/Google play btn.svg" alt="Google Play"></a>
+  </div>
+  <div class="phone-image">
+    <img src="assets/phone.svg" alt="Phone">
+  </div>
+</section>
+
+<section class="main">
+  <h2>Our Products</h2>
+  <div class="product-grid">
+    <div class="product-item">
+      <img src="assets/image-outline.svg" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>$19.99</p>
+    </div>
+    <div class="product-item">
+      <img src="assets/image-outline.svg" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>$29.99</p>
+    </div>
+    <div class="product-item">
+      <img src="assets/image-outline.svg" alt="Product 3">
+      <h3>Product 3</h3>
+      <p>$39.99</p>
+    </div>
+    <div class="product-item">
+      <img src="assets/image-outline.svg" alt="Product 4">
+      <h3>Product 4</h3>
+      <p>$49.99</p>
+    </div>
+    <!-- Add more product items as needed -->
+  </div>
+</section>
 
 </body>
 </html>
