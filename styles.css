@@ -23,7 +23,7 @@ p {
 /* Header */
 
 header {
-    padding: 20px;
+    padding: 20px 20px 0;
     background-color: #EEE;
 }
 
@@ -60,8 +60,13 @@ header {
 
 .header-nav a {
     text-decoration: none;
-    color: #333;
-    font-size: 18px;
+    color: #999;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.header-nav a.selected-header-item {
+    color: #222;
 }
 
 .get-quote-button {
@@ -80,27 +85,28 @@ header {
 
 /* End Header */
 
-/* Download App Section */
+/* Download hero Section */
 
-.download-app {
+.hero {
     background-color: #EEE;
     text-align: center;
+    overflow: hidden;
 }
 
-/* App Buttons */
+/* Hero Buttons */
 
-.app-buttons {
+.hero-buttons {
     display: flex;
     justify-content: center;
     margin-top: 3.38rem;
 }
 
-.app-buttons a {
+.hero-buttons a {
     display: inline-block;
     margin: 0 10px;
 }
 
-.app-buttons img {
+.hero-buttons img {
     width: 150px;
     height: auto;
 }
@@ -108,7 +114,8 @@ header {
 /* Phone Image */
 
 .phone-image {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 2.56rem;
     opacity: 0; /* Set opacity to 0 so it will be set to 1 in animation */
     animation: slideUp 2s ease-out forwards;
@@ -127,7 +134,7 @@ header {
     }
 }
 
-/* End Download App Section */
+/* End Download hero Section */
 
 /* Main Section */
 
@@ -148,7 +155,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    max-width: 1440px;
+    max-width: 1138px;
     margin: 0 auto;
 }
 
@@ -169,6 +176,132 @@ header {
 
 .product-item h3 {
     margin-top: 7.19rem;
+    color: #222;
+}
+
+.product-item p {
+    color: rgba(0, 0, 0, 0.80);
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1138px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.category-item {
+    background-color: #343332;
+    height: 349px;
+    width: 100%;
+    padding: 117px 40px 80px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-item h3 {
+    font-size: 32px;
+    color: #FFF;
+}
+
+.category-item h3, .category-item a {
+    text-transform: uppercase;
+}
+
+.category-item h4, .category-item a {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.category-item h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.category-item a {
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.60);
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.category-item a:hover {
+    color: rgba(255, 255, 255);
 }
 
 /* End Main Section */
+
+
+/* Footer */
+
+footer {
+    background-image: url(assets/footer-bg.png);
+    min-height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1138px;
+    margin: 70px auto;
+}
+
+.footer-item {
+    background-color: #fff;
+    width: calc(100% - 60px * 2);
+    margin: 0 60px;
+    padding: 33px;
+    min-height: 417px;
+}
+
+.footer-item h3 {
+    font-size: 53px;
+    color: #222;
+}
+
+.footer-item h4 {
+    color: rgba(34, 34, 34, 0.80);
+    font-size: 22px;
+}
+
+.footer-item p {
+    font-size: 14px;
+    color: rgba(34, 34, 34, 0.60);
+    font-weight: 500;
+}
+.footer-item ul {
+    margin-top: 20px;
+}
+
+.footer-item ul li {
+    display: flex;
+    align-items: center;
+    padding-top: 21px;
+}
+
+.footer-item ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer-item ul li img {
+    padding-right: 16px;
+}
+
+.footer-item-right {
+    grid-column-start: 2;
+}
+/* End Footer */
