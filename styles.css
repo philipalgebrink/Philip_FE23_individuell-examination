@@ -89,7 +89,7 @@ header {
         padding: 14px 16px 0 16px;
     }
 
-    .header-center ul {
+    .header-content__desktop-navigation ul {
         display: none;
     }
 
