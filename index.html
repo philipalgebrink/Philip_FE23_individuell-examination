@@ -16,33 +16,34 @@
 <body>
 
   <header>
-    <div class="header-center">
-      <div class="header-logo">
-        <img src="assets/zocom-logo 1.svg" alt="Logo" class="logo-img">
+    <div class="header-content">
+      <div class="header-content__logo">
+        <img src="assets/zocom-logo 1.svg" alt="Logo" class="header-content__logo-img">
       </div>
-      <nav class="header-nav">
+      <nav class="header-content__desktop-navigation">
         <ul>
-          <li><a href="#" class="selected-header-item">HOME</a></li>
-          <li><a href="#">HOW IT WORKS</a></li>
-          <li><a href="#">FEATURES</a></li>
-          <li><a href="#">PRESS</a></li>
-          <li><a href="#">PRICING</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#" class="header-content__desktop-navigation-item header-content__desktop-navigation-item--selected">HOME</a></li>
+          <li><a href="#" class="header-content__desktop-navigation-item">HOW IT WORKS</a></li>
+          <li><a href="#" class="header-content__desktop-navigation-item">FEATURES</a></li>
+          <li><a href="#" class="header-content__desktop-navigation-item">PRESS</a></li>
+          <li><a href="#" class="header-content__desktop-navigation-item">PRICING</a></li>
+          <li><a href="#" class="header-content__desktop-navigation-item">CONTACT</a></li>
         </ul>
       </nav>
-      <div class="get-quote-button">
-        <a href="#" class="quote-button">GET A QUOTE</a>
-      </div>
+      <nav class="header-content__mobile-navigation">
+        <img src="assets/navicon.svg" height="16" alt="mobile menu">
+      </nav>
+        <a href="#" class="header-content__button">GET A QUOTE</a>
     </div>
     <div class="hero">
       <h1>Download our App</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel<br>eleifend diam, tempus accumsan
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel eleifend diam, tempus accumsan
         neque. Praesent quis dolor.</p>
-      <div class="hero-buttons">
+      <div class="hero__buttons">
         <a href="#"><img src="assets/App store btn.svg" alt="App Store"></a>
         <a href="#"><img src="assets/Google play btn.svg" alt="Google Play"></a>
       </div>
-      <div class="phone-image">
+      <div class="hero__image">
         <img src="assets/phone.svg" alt="Phone">
       </div>
     </div>
@@ -51,34 +52,34 @@
   <section class="main">
     <h2>Our products</h2>
     <div class="product-grid">
-      <div class="product-item">
+      <div class="product-grid__item">
         <img src="assets/image-outline.svg" alt="Product 1">
         <h3>Product 1</h3>
         <p>$19.99</p>
       </div>
-      <div class="product-item">
+      <div class="product-grid__item">
         <img src="assets/image-outline.svg" alt="Product 2">
         <h3>Product 2</h3>
         <p>$29.99</p>
       </div>
-      <div class="product-item">
+      <div class="product-grid__item">
         <img src="assets/image-outline.svg" alt="Product 3">
         <h3>Product 3</h3>
         <p>$39.99</p>
       </div>
-      <div class="product-item">
+      <div class="product-grid__item">
         <img src="assets/image-outline.svg" alt="Product 4">
         <h3>Product 4</h3>
         <p>$49.99</p>
       </div>
     </div>
     <div class="category-grid">
-      <div class="category-item">
+      <div class="category-grid__item">
         <h3>Collection</h3>
         <h4>Summer 2021</h4>
         <a href="#">Check it out</a>
       </div>
-      <div class="category-item">
+      <div class="category-grid__item">
         <h3>Collection</h3>
         <h4>Summer 2021</h4>
         <a href="#">Check it out</a>
@@ -88,7 +89,7 @@
 
   <footer>
     <div class="footer-content">
-      <div class="footer-item footer-item-right">
+      <div class="footer-content__item footer-content__item--right">
         <h3>Contact us</h3>
         <h4>We'd love to hear from you</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel eleifend diam, tempus accumsan neque.</p>
