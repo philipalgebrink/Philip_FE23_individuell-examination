@@ -131,16 +131,23 @@ header {
     height: auto;
 }
 
+.hero__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 554px;
+    margin: 0 auto;
+}
+
 @media (max-width: 480px) {
     .hero {
         padding: 82px 20px 0 20px;
     }
 
-    .hero h1 {
+    .hero__title {
         font-size: 36px;
     }
 
-    .hero p {
+    .hero__subtitle {
         font-size: 12px;
         font-weight: 400;
     }
@@ -188,7 +195,7 @@ header {
     padding: 20px;
 }
 
-.main h2 {
+.main__title {
     font-size: 53px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -218,18 +225,18 @@ header {
     margin-top: 6rem;
 }
 
-.product-grid__item h3 {
+.product-grid__item-title {
     margin-top: 7.19rem;
     color: #222;
 }
 
-.product-grid__item p {
+.product-grid__item-subtitle {
     margin-bottom: 10px;
     color: rgba(0, 0, 0, 0.80);
 }
 
 @media (max-width: 480px) {
-    .main h2 {
+    .main__title {
         font-size: 36px;
     }
 
@@ -271,27 +278,27 @@ header {
     align-items: center;
 }
 
-.category-grid__item h3 {
+.category-grid__item-title {
     font-size: 32px;
     color: #FFF;
 }
 
-.category-grid__item h3,
-.category-grid__item a {
+.category-grid__item-title,
+.category-grid__item--btn {
     text-transform: uppercase;
 }
 
-.category-grid__item h4,
-.category-grid__item a {
+.category-grid__item-subtitle,
+.category-grid__item--btn {
     color: rgba(255, 255, 255, 0.60);
 }
 
-.category-grid__item h4 {
+.category-grid__item-subtitle {
     font-size: 18px;
     font-weight: 400;
 }
 
-.category-grid__item a {
+.category-grid__item--btn {
     font-size: 12px;
     font-weight: 500;
     border-radius: 3px;
@@ -302,7 +309,7 @@ header {
     text-decoration: none;
 }
 
-.category-grid__item a:hover {
+.category-grid__item--btn:hover {
     color: rgba(255, 255, 255);
 }
 
@@ -356,17 +363,17 @@ footer {
     min-height: 417px;
 }
 
-.footer-content__item h3 {
+.footer-content__item-title {
     font-size: 53px;
     color: #222;
 }
 
-.footer-content__item h4 {
+.footer-content__item-subtitle {
     color: rgba(34, 34, 34, 0.80);
     font-size: 22px;
 }
 
-.footer-content__item p {
+.footer-content__item-description {
     font-size: 14px;
     color: rgba(34, 34, 34, 0.60);
     font-weight: 500;
